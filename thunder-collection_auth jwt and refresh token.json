@@ -1,0 +1,84 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "auth jwt and refresh token",
+    "dateExported": "2023-04-27T21:03:13.607Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "604c011d-52eb-458c-8c4d-7e3dc2ad0c60",
+            "colId": "630fe6cb-5e87-43c8-ba53-230aa1fd8b94",
+            "containerId": "",
+            "name": "refresh token",
+            "url": "http://localhost:3001/refresh-token",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-27T21:01:45.108Z",
+            "modified": "2023-04-27T21:01:45.108Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"refresh_token\": \"acbd6e0b-ec9f-4acd-8a51-b123421ed864\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "74dce320-4628-4ae9-bc4b-aeeafa5ce32e",
+            "colId": "630fe6cb-5e87-43c8-ba53-230aa1fd8b94",
+            "containerId": "",
+            "name": "list courses",
+            "url": "http://localhost:3001/courses",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-27T21:02:01.820Z",
+            "modified": "2023-04-27T21:02:01.820Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODI2MjE3ODMsImV4cCI6MTY4MjYyMTgwMywic3ViIjoiMTZjNWQ0NGEtNjJlMC00MjgwLTk3NmEtNWZkZDBlMDYwNGFmIn0._n0kFkUntqpln9htGTgYO_lhTdp09fDfWvLDCVNqXIwd"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a979b39a-eae5-4a55-825b-e736dacea681",
+            "colId": "630fe6cb-5e87-43c8-ba53-230aa1fd8b94",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3001/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-04-27T21:02:29.422Z",
+            "modified": "2023-04-27T21:02:29.422Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"jesse.l\",\n  \"password\": \"1234\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "498a4a18-c7f9-461e-854c-8c03330f976c",
+            "colId": "630fe6cb-5e87-43c8-ba53-230aa1fd8b94",
+            "containerId": "",
+            "name": "create users",
+            "url": "http://localhost:3001/users",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-04-27T21:02:51.072Z",
+            "modified": "2023-04-27T21:02:51.072Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Jesse\",\n  \"username\":\"jesse.l\",\n  \"password\": \"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
